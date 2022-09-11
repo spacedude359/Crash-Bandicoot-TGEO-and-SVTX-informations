@@ -1,0 +1,36 @@
+<head>
+    <meta charset="utf-8" />
+    <style>
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "Left . Right"
+      ". . ."
+      ". . ."; 
+  }
+  .Left { 
+      grid-area: Left; 
+    }
+  .Right { 
+      grid-area: Right;
+ }
+    </style>
+</head>
+
+
+<h2>Crash 1 SVTX and TGEO informations</h2>
+<input type="file" id="file" />
+<script src="model.js"></script> 
+
+<div class="container">
+    <div id="Leff" class="Left">
+        <div id="outputA"></div>
+    </div>
+    <div id="Rigg" class="Right">
+        <div id="outputB"></div>
+        <div id="outputC"></div>
+    </div>
+  </div>
